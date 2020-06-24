@@ -1,0 +1,60 @@
+print("Динамическая отработка автомата Мили")
+print("Автомат в состоянии S1")
+state = 1
+while(state != "Quit"):
+    if (state == 1):
+        print("Вы в S1")
+        print("Ведите значени X(x1 - 1, x2 - 2, выход - 3)")
+        x = int(input())
+        if (x == 1):
+            state = 4
+            print("Управление x1/y2 состояние S4")
+        elif (x == 2):
+            state = 2
+            print("Управление x2/y1 состояние S2")
+        elif (x == 3):
+            state = "Quit"
+            print("Bye boy's")
+        else:
+            print("Что-то пошло не так")
+    if (state == 2):
+        print("Вы в S2")
+        print("Ведите значени X(x1 - 1, x2 - 2, выход - 3)")
+        x = int(input())
+        if x == 1:
+            state = 1
+            print("Управление x1/y3 состояние S1")
+        elif x == 2:
+            state = 4
+            print("Управление x2/y1 состояние S4")
+        elif x == 3:
+            state = "Quit"
+            print("Bye boy's")
+    if state == 3:
+        print("Вы в S3")
+        print("Ведите значени X(x1 - 1, x2 - 2, выход - 3)")
+        x = int(input())
+        if x == 1:
+            state = 4
+            print("Управление x1/y2 состояние S4")
+        elif x == 2:
+            state = 1 
+            print("Управление x2/y3 состояние S1")
+        elif x == 3:
+            state = "Quit"
+            print("Bye boy's")
+    if state == 4:
+        print("Вы в S4")
+        print("Ведите значени X(x1 - 1, x2 - 2, выход - 3)")
+        x = int(input())
+        if (x == 1):
+            state = 2
+            print("Управление x1/y2 состояние S2")
+        elif x == 2:
+            state = 3
+            print("Управление x2/y1 состояние S3")
+        elif x == 3:
+            state = "Quit"
+            print("Bye boy's")
+    
+
