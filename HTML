@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<link rel="shortcut icon" href="assets/img/iconka.png" type=image/png>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Стрельцов Данил Васильевич</title>
+	<meta name="description" content="Резюме" />
+	<meta name="keywords" content="Стрельцов Данил" />
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+	<div class="main">
+		
+		<div class="header">
+			<div class="logo">
+				<div class="logo_text">
+					<h1><a href="index.html">Стрельцов Данил Васильевич</a></h1>
+					<h2>Web-desing - моя страсть!</h2>
+				</div>
+			</div>
+			
+			<div class="menubar">
+				
+				<ul class="menu">
+					<li class="selected"><a href="#">Главная</a></li>	
+					<li><a href="#edu">Образование</a></li>
+					<li><a href="#skil">Умения</a></li>
+					<li><a href="#lg">Знания языков</a></li>
+					<li><a href="php/index.php" target="_blank">PHP</a></li>
+				</ul>
+
+			</div>
+
+		</div>
+
+			
+		<div class="site_content">
+
+			<div class="content">
+				
+				<h1 align="center">Резюме</h1>
+
+				<div class="inf_block">
+					
+					<img src="assets/img/1.jpg" width="250" height="200" alt="Веб-дизайнер"></a>
+					
+					<ul class="info"> 
+					<li>Возраст: <span>18 лет</span></li>
+					<li>Пол: <span>Мужской</span> </li>
+					<li>Город: <span>Харьков</span></li>
+					<li>Тел: <span>+380982880909</span></li>
+					<li>E-mail: <span>danilpatriot@gmail.com</span></li>
+				</div>
+				<br>
+				<br>
+				<br>
+				<div class="posts">
+					
+					<hr>
+					<h2> <a name="edu">Образование</a> </h2>
+					<div class="posts_content">
+						<p class="xny">
+							Харьковский Университет Городского Хозяйства Им. Бекетова<br>
+							Менеджмент, Компьютерные Науки, Харьков (2018-2023)<br>
+						</p>
+						<h2>Курсы/сертификаты</h2>
+						<p> <a href="https://fructcode.com/ru/certificates/fd0ca845c2b2321885d4d59eb00525ed/ru/" target="_blank">Сертификат HTML/CSS|FructCode (18.11.2019)</a> </p>
+						<p><a href="https://fructcode.com/ru/certificates/deecc5e0c1022b7ece9e1fb41d638794/ru/" target="_blank">Сертификат JavaScript/jQuery|FructCode (05.09.2019)</a></p>
+						<p>Сертификат English pre-intermedian|EnglishDom (23.08.2019) </p>
+					</div>
+
+					
+
+					<hr>
+		            <h2><a name="skil">Умения</a></h2>
+		            <div class="posts_content">
+							<p class="sk">HTML&CSS</p>
+							<div class="containers">
+							  <div class="skills html">75%</div>
+							</div>
+							
+							<p class="sk">JavaScript</p>
+							<div class="containers">
+							<div class="skills js">40%</div>
+							</div>
+							
+							<p class="sk">Python</p>
+							<div class="containers">
+							  <div class="skills python">35%</div>
+							</div>
+							
+							<p class="sk">Office 365</p>
+							<div class="containers">
+							  <div class="skills ofice">60%</div>
+							</div>
+							
+						<br>
+					
+					  <hr>
+
+					  <h2><a name="lg"></a>Языки</h2>
+					  <ul class="lang">
+						  <li><span>English</span> - B2 level</li>
+						  <li><span>Украинский</span> - родной</li>
+						  <li><span>Русский</span> - свободно</li>
+					  </ul>
+					</div>
+		            
+
+				</div>
+
+
+			</div>
+
+		</div>
+
+
+
+
+
+	<div class="footer">
+		<a name="cont"></a>
+		<p>
+			<a href ="https://www.instagram.com/sdv_dev/" target="_blank"><img src="assets/img/inst_w.png" height="2%" width="2%"></a> 
+			<a href="https://www.facebook.com/profile.php?id=100012328725212" target="_blank"><img src="assets/img/fbook.png"  height="2%" width="2%"></a> 
+			<a href="https://web.telegram.org/@SDV_Developer" target="_blank"><img src="assets/img/telg.png"   height="2%" width="2.4%"></a> 
+			
+		</p>
+		<p>2019</p>
+	</div>
+
+	</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script defer>
+        $(window).on('scroll', function () {
+                var scrollTop = $(window).scrollTop();
+                if (scrollTop > 400) {
+                    
+                    $(".html").stop().animate({width: "75%"},1750);
+                    $(".js").stop().animate({width: "40%"},1750);
+                    $(".python").stop().animate({width: "35%"},1750);
+                    $(".ofice").stop().animate({width: "60%"},1750);
+                }
+                else {
+                    
+                    $(".html").stop().animate({width: "1%"},750);
+                    $(".js").stop().animate({width: "1%"},750);
+                    $(".python").stop().animate({width: "1%"},750);
+                    $(".ofice").stop().animate({width: "1%"},750);
+                }
+            });
+    
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
